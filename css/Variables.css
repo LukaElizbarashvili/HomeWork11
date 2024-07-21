@@ -1,0 +1,35 @@
+:root{
+    /* Font */
+    --Fonts:"Inter", sans-serif;
+
+
+    --heading: 24px;
+    --weight: 400px;
+    --heaingLnHeight: 32px;
+
+    --Paragraph1: 16px;
+    --paragraph1LnHeight:27px;
+
+
+    --Paragraph2: 14px;
+    --paragraph2LnHeight:25px;
+
+    --Cardfont: 16px;
+    --Bold: 700;
+    --CardLnHeight:24px;
+
+    --buttonFont: 16px;
+    --buttonLnHeight:22px;
+    --buttonBorderRadius:4px;
+
+
+    /* Colors */
+    --bgColor:#1c5550;
+    --whiteTxT: #DFD9D9;
+    --ColorsBg: #00000033;
+    --yellowishTxt:#C3B97F;
+    --greenishTxt:#91B599;
+    --greenTxt:#1C5550;
+    --sectionBgColor:#DFD9D9;
+    --cardButtonColor:#C3B97F;
+}

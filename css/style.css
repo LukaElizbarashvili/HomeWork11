@@ -1,0 +1,170 @@
+@import url(Variables.css);
+/* Mainc Container */
+.Container{
+    width: min(100%, 1440px);
+    margin: auto;
+    background-color:var(--bgColor);
+    padding: 32px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:48px 146px 146px 220px;
+    gap: 48px 40px;
+    grid-template-areas: 
+        "HEADER HEADER HEADER HEADER"
+        "ASIDE SECTION1 SECTION1 SECTION2"
+        "ASIDE SECTION1 SECTION1 SECTION3"
+        "CARD1 CARD2 CARD3 CARD4";
+    
+}
+/* Header */
+header{
+    grid-area: HEADER;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.HeaderUl{
+    display: flex;
+    column-gap: 80px;
+}
+.HeaderText{
+    color: var(--whiteTxT);
+    font-size: var(--heading);
+    font-family: var(--Fonts);
+    font-weight: var(--weight);
+    line-height: var(--heaingLnHeight);
+}
+.ButtonContainer{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+}
+.fa-solid{
+    background-color:var(--ColorsBg) ;
+    height: 32px;
+    width: 32px;
+    box-shadow: 0 2px 4px -2px #DFD9D966 inset, 0 2px 4px 0 #00000033 ;
+    border-radius: var(--buttonBorderRadius);
+    font-size: var(--buttonFont);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.fa-user{
+    color: var(--greenishTxt)
+}
+.fa-cart-shopping{
+    color: var(--yellowishTxt);
+}
+/* This is Side panel */
+aside{
+    background-color: var(--ColorsBg);
+    grid-area: ASIDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    row-gap: 16px;
+    padding: 38px 40px;
+    box-shadow: 0 4px 4px 0 #00000033 inset, 0 -1px 4px 0 #DFD9D966 inset;
+}
+.PanelTitle{
+    font-family: var(--Fonts);
+    font-size: var(--Paragraph1);
+    line-height: var(--paragraph1LnHeight);
+    font-weight: var(--weight);
+    color: var(--yellowishTxt);
+}
+.PanelUl{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.PanelText{
+    font-family: var(--Fonts);
+    font-size: var(--Paragraph2);
+    line-height: var(--paragraph2LnHeight);
+    font-weight: var(--weight);
+    color: var(--greenishTxt);
+}
+/* This is the first Section */
+.Section1{
+    grid-area: SECTION1;
+}
+.Section1_Photo{
+    width: 100%;
+    object-fit: cover;
+    height: 340px;
+}
+/* This is the Second Section */
+.Section2{
+    background-color: var(--sectionBgColor);
+    grid-area: SECTION2;
+}
+.Section_Photos{
+    width: 100%;
+    object-fit: cover;
+    height: 146px;
+}
+/* This is the Third Section */
+.Section3{
+    background-color:var(--sectionBgColor);
+    grid-area: SECTION3;
+
+}
+/* This are The Cards */
+article{
+    display: flex;
+    flex-direction: column;
+}
+.CardImg{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.CardSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--sectionBgColor) ;
+}
+h4{
+    margin-left: 8px;
+    font-family: var(--Fonts);
+    font-size: var(--Cardfont);
+    line-height: var(--CardLnHeight);
+    font-weight: var(--Bold);
+    color:var(--greenTxt);
+
+}
+.CardButton{
+    width: 97px;
+    height: 40px;
+    background-color: var(--cardButtonColor);
+    border: none;
+    font-family: var(--Fonts);
+    font-size: var(--Paragraph2);
+    line-height: var(--buttonLnHeight);
+    font-weight: var(--Bold);
+    color: var(--whiteTxT);
+}
+
+
+
+
+.Card1{
+    /* background-color: burlywood; */
+    grid-area: CARD1;
+}
+.Card2{
+    /* background-color: darkslateblue; */
+    grid-area: CARD2;
+}
+.Card3{
+    /* background-color: greenyellow; */
+    grid-area: CARD3;
+}
+.Card4{
+    /* background-color: coral; */
+    grid-area: CARD4;
+}
